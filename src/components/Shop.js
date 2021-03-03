@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { useTranslation } from "react-i18next";
 import { languageCodeOnly } from "../services/i18n";
+import ShopCosts from "./ShopCosts";
 
 
 function Shop  ({
@@ -55,15 +56,15 @@ function Shop  ({
             setAlert('');
     }
 
-    const listItems = items.map(el => (
-        <div key={el.id} {...el}>
-             {(`${el.name}: $${el.price}`)}
-            <input type='submit' value='add' onClick={() => addToCart(el)} />
-        </div>
-    ))
+    // const listItems = items.map(el => (
+    //     <div> <ShopCosts key={el.id} />
+    //         {`${el.name}: $${el.price}`}
+    //         <input type='submit' value='remove' onClick={() => addToCart(el)} />
+    //     </div>
+    // ))
 
     const cartItems = cart.map(el => (
-        <div key={el.id} >
+        <div> <ShopCosts key={el.id} />
             {`${el.name}: $${el.price}`}
             <input type='submit' value='remove' onClick={() => removeFromCart(el)} />
         </div>
@@ -75,8 +76,10 @@ function Shop  ({
         return (
             <div>
                 <div>
-                {listItems}
-              </div>
+                    {items.map((el) => (
+                    <ShopCosts key={el.id} {...el}/>
+                    ))}
+                </div>
                 <div>{t("cart")}</div>
                 <div>{cartItems}</div>
                 <div>{t("total")}:${cartTotal}</div>

@@ -1,10 +1,16 @@
-function format(value, format, lang) {
+function format(value, format, lang ) {
   if (format.startsWith("date")) {
     return formatDate(value, format, lang);
   }
 
   if (format.startsWith("number")) {
     return formatNumber(value, format, lang);
+  }
+
+  
+
+  if (format.startsWith("costs")) {
+    return formatNumber1(value , lang)
   }
 
   return value;
@@ -19,13 +25,22 @@ function formatDate(value, format, lang) {
     : new Intl.DateTimeFormat(lang, options).format(value);
 }
 
-function formatNumber(value, format, lang) {
+function formatNumber(value, format, lang ) {
   const options = toOptions(format, "number");
 
   
   return options === null
     ? value
-    : new Intl.NumberFormat(lang, options).format(value);
+    : new Intl.NumberFormat(lang, options ).format(value);
+
+}
+
+function formatNumber1(value,  lang) {
+  const options = (format, "cost");
+
+  return options === null
+    ? value
+  :new Intl.NumberFormat( lang, {style: 'currency', currency: 'USD'} ).format(value);
 
 }
 

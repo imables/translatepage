@@ -10,6 +10,7 @@
     "error_message": "is already in your cart",
     "estimated_weight": "Estimated weight",
     "estimated_weight_kg": "{{weight, number(style: unit; unit: kilogram)}}",
+    "list_item": "{{cost, costs(style: 'currency', currency: 'USD')}}",
     "footer": "website translation - individual project.",
     "hello_user": "Hello, {{user.firstName}}",
     "basket_delivered": "{{count, number}} basket delivered",
