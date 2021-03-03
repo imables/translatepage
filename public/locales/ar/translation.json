@@ -1,0 +1,22 @@
+{
+  "app_name": "جروتباسكت",
+  "document_title": "جروتباسكت — سلة الطعام العضوية الأسبوعية",
+  "weekly_basket": "السلة الإسبوعية",
+  "weekly_basket_title": "في الجروتباسكت هذا الإسبوع — {{date, date(weekday: short; day: numeric; month: long)}}",
+  "checkout": "الدفع",
+  "cart": "عربة التسوق",
+  "total": "مجموع",
+  "alert": "رسالة تنبيه",
+  "error_message": "موجود بالفعل في عربة التسوق الخاصة بك",
+  "estimated_weight": "الوزن المقدر",
+  "estimated_weight_kg": "{{weight, number(style: unit; unit: kilogram)}}",
+  "list_item": "{{cost, number}}",
+  "footer": "ترجمة مواقع الويب - مشروع فردي.",
+  "hello_user": "أهلاً {{user.firstName}}",
+  "basket_delivered_0": "لم يتم توصيل سلال",
+  "basket_delivered_1": "تم توصيل سله {{count, number}}",
+  "basket_delivered_2": "تم توصيل سلتان",
+  "basket_delivered_3": "تم توصيل {{count, number}} سلال",
+  "basket_delivered_4": "تم توصيل {{count, number}} سله",
+  "basket_delivered_5": "تم توصيل {{count, number}} سله"
+}

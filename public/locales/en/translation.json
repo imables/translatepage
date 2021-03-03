@@ -1,0 +1,21 @@
+{
+    "app_name": "Jakobs Basket",
+    "document_title": "Jakobs — Your weekly organic basket",
+    "weekly_basket_title": "In this Week's basket — {{date, date(day: numeric; month: short; year: numeric)}}",
+    "weekly_basket": "Weekly Basket",
+    "checkout": "checkout",
+    "cart": "CART",
+    "total": "Total",
+    "alert": "Alert Message",
+    "error_message": "is already in your cart",
+    "estimated_weight": "Estimated weight",
+    "estimated_weight_kg": "{{weight, number(style: unit; unit: kilogram)}}",
+    "footer": "website translation - individual project.",
+    "hello_user": "Hello, {{user.firstName}}",
+    "basket_delivered": "{{count, number}} basket delivered",
+    "basket_delivered_plural": "{{count, number}} baskets delivered"
+  }
+
+  
+
+  
