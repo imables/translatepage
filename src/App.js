@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WeeklyBasket from "./components/WeeklyBasket";
 import Shop from './components/Shop';
+import WeeklyAvailable from './components/WeeklyAvailable';
 import "./App.scss";
 import {BrowserRouter, Route} from 'react-router-dom' 
 
@@ -31,6 +32,7 @@ function App() {
         <Header />
         <Route exact path='/' component={WeeklyBasket} />
         <Route exact path='/Shop' component={Shop} />
+        <Route exact path='/WeeklyAvailable' component={WeeklyAvailable} />
       </main>
 
       <Footer />

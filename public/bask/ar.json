@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "طماطم حمراء",
+      "description": "محصول جيد من الطماطم هذا الأسبوع",
+      "estimatedWeightInKilograms": 2,
+      "imageUrl": "/img/pexels-anthony-shkraba-5589043.jpg"
+    },
+    {
+      "id": 2,
+      "title": "كوسة",
+      "description": "دفعة أخرى انتقائية ولذيذة من الكوسة",
+      "estimatedWeightInKilograms": 3.5,
+      "imageUrl": "/img/pexels-daria-shevtsova-1095550.jpg"
+    },
+    {
+      "id": 3,
+      "title": "بطاطا",
+      "description": "من الأرض إلى مائدتك ، لا شيء بينهما",
+      "estimatedWeightInKilograms": 5,
+      "imageUrl": "/img/pexels-elle-hughes-1660030.jpg"
+    },
+    {
+      "id": 4,
+      "title": "جزر",
+      "description": "الجزر العضوي قبيح ، وهو الأفضل على الإطلاق",
+      "estimatedWeightInKilograms": 2.5,
+      "imageUrl": "/img/pexels-lisa-fotios-1279330.jpg"
+    },
+    {
+      "id": 5,
+      "title": "بازيلاء",
+      "description": "لن نكذب: فبازلاء هذا الموسم لذيذة بشكل لا يصدق",
+      "estimatedWeightInKilograms": 2,
+      "imageUrl": "/img/pexels-trang-doan-1092730.jpg"
+    },
+    {
+      "id": 6,
+      "title": "فطر متنوع",
+      "description": "كل أسبوع هي تشكيلة مختلفة",
+      "estimatedWeightInKilograms": 1.5,
+      "imageUrl": "/img/pexels-ella-olsson-1640777.jpg"
+    }
+  ]

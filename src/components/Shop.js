@@ -12,7 +12,7 @@ import {
   
 
 function Shop  ({
-    price
+
 })  {
 
 
@@ -51,6 +51,7 @@ function Shop  ({
         let addIt = true 
         for(let i = 0; i < cart.length; i++){
             if(cart[i].id === el.id) addIt = false
+            console.log(cart.length, "mrman");
         }
         if (addIt) {
             setCart([...cart, el])
@@ -80,19 +81,31 @@ function Shop  ({
     //     </div>
     // ))
 
-    const display = items.map(el => ( 
+    const add = items.map(el => ( 
         <div>
-        <input type='submit' value='add' onClick={() => addToCart(el)} />
+        <input className="button mt-2 mb-2" type='submit' value='add' onClick={() => addToCart(el)} />
       </div>
     ))
 
     const remove = cart.map(el => ( 
         <div>
-        <input type='submit' value='remove' onClick={() => removeFromCart(el)} />
+        <input className="button mt-2 mb-2" type='submit' value='remove' onClick={() => removeFromCart(el)} />
       </div>
     ))
 
-    console.log(supportedLanguages[0].type, i18n.language, "oioi")
+    // function translateTotal ()  {
+    //   if (supportedLanguages[0].type === "en") {
+    //     return "en-US" 
+    //   } else if (supportedLanguages[1].type === "ar"){
+    //     return "ar-EG" 
+    //   }
+    // }
+    
+    const overall = cartTotal;
+
+    
+    console.log(supportedLanguages[1].type)
+    
 
     if (items.length === 0) {
         return <p>Loading...</p>;
@@ -101,30 +114,31 @@ function Shop  ({
             <div>
                 <div>
                     {items.map((el) => (
-                    <ShopCosts key={el.id} {...el}/>
+                    <ShopCosts key={el.id} {...el} />
+                    
                     ))}
+                    <div>{add}</div>
                 </div>
-                <div>{display}</div>
-                <div>{t("cart")}</div>
-                <div>{cart.map((el) => (
+                <div className="card card-content content has-background-primary-light mt-2">{t("cart")}</div>
+                <div >{cart.map((el) => (
                     <ShopCosts key={el.id} {...el}/>
                     ))}</div>
                     <div>{remove}</div>
-                <div>
-                {t("total")}: {(() => {
-                    if (supportedLanguages[0].type === i18n.language) {
-                        return <div>${cartTotal}</div>
-                    } else {
-                        return<div>د.إ{cartTotal}</div>
-                    }
-                })()}
                 
-                </div>
+                 {/* {t("total")}: {(() => {
+                    if (i18n.language === supportedLanguages[0].type) {
+                        console.log(translateTotal());
+                        return <div className="card card-content content">£{cartTotal}</div>
+                    } else if (supportedLanguages[1].type){
+                        return<div>د.إ{overall}</div>
+                    }
+                    })() }  */}
+                    <p>{t("total", { totals: (cartTotal)})}</p>
+
                 <div>{t("alert")}: {alert}</div>
             </div>
         );
       }
-
 };
 
 export default Shop;

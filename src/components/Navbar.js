@@ -36,17 +36,28 @@ function Navbar({ onLanguageChange }) {
         <div className="navbar-menu">
           <div className="navbar-start">
             <a className="navbar-item" href="/Shop">
-              {t("checkout")}
+              {t("Checkout")}
+            </a>
+            <a className="navbar-item" href="/WeeklyAvailable">
+              {t("weekly_available")}
             </a>
           </div>
         </div>
+
+        {/* <div className="navbar-menu">
+          <div className="navbar-start">
+            <a className="navbar-item" href="/WeeklyAvailable">
+              {t("weekly_available")}
+            </a>
+          </div>
+        </div> */}
 
         <div className="navbar-end">
           <div className="navbar-item">
             <p>{t("hello_user", { user })}</p>
           </div>
 
-          <div className="navbar-item">
+          <div className="navbar-item ">
             <LanguageSwitcher onChange={onLanguageChange} />
           </div>
         </div>

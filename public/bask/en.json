@@ -3,42 +3,42 @@
       "id": 1,
       "title": "Red Tomatoes",
       "description": "Good yield of tomatoes this week",
-      "estimatedWeightInKilograms": 2,
-      "imageUrl": "/img/tom-hermans-nM6qrtnVKn8-unsplash.jpg"
+      "price": 20,
+      "imageUrl": "/img/pexels-anthony-shkraba-5589043.jpg"
     },
     {
       "id": 2,
       "title": "Zucchini",
       "description": "Another eccletic and delicious batch of zucchini",
-      "estimatedWeightInKilograms": 3.5,
-      "imageUrl": "/img/dan-cristian-padure-B6NmOoIu2oc-unsplash.jpg"
+      "price": 30,
+      "imageUrl": "/img/pexels-daria-shevtsova-1095550.jpg"
     }, 
     {
       "id": 3,
       "title": "Potatoes",
       "description": "From the earth to your table, nothing in between",
-      "estimatedWeightInKilograms": 5,
-      "imageUrl": "/img/markus-spiske-484GsKrL5r8-unsplash.jpg"
+      "price": 40,
+      "imageUrl": "/img/pexels-elle-hughes-1660030.jpg"
     },
     {
       "id": 4,
       "title": "Carrots",
       "description": "Organic carrots are ugly, and the absolute best",
-      "estimatedWeightInKilograms": 2.5,
-      "imageUrl": "/img/markus-spiske-1DtkOfisieg-unsplash.jpg"
+      "price": 50,
+      "imageUrl": "/img/pexels-lisa-fotios-1279330.jpg"
     },
     {
       "id": 5,
       "title": "Peas",
       "description": "We're not going to lie: this season's peas are incredibly delicious",
-      "estimatedWeightInKilograms": 2,
-      "imageUrl": "/img/mikolaj-idziak-17JEu8a4dDE-unsplash.jpg"
+      "price": 60,
+      "imageUrl": "/img/pexels-trang-doan-1092730.jpg"
     },
     {
       "id": 6,
       "title": "Assorted Mushrooms",
       "description": "Every week it's a different assortment",
-      "estimatedWeightInKilograms": 1.5,
-      "imageUrl": "/img/nick-grappone-bTFPfoVOqb0-unsplash.jpg"
+      "price": 80,
+      "imageUrl": "/img/pexels-ella-olsson-1640777.jpg"
     }
   ]

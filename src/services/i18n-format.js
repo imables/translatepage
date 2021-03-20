@@ -16,7 +16,7 @@ function format(value, format, lang ) {
     return new Intl.NumberFormat('ar-EG', {style: 'currency', currency: 'AED'}).format(value);
   }
   if (format === "costs1") {
-    return new Intl.NumberFormat('EN-us', {style: 'currency', currency: 'USD'}).format(value);
+    return new Intl.NumberFormat('en-US', {style: 'currency', currency: 'GBP'}).format(value);
   }
   return value;
 
